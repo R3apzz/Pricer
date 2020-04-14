@@ -1,0 +1,5 @@
+-- Pull products by sku / INPUT_SKU holds the value for the scanned SKU number from the user
+SELECT store, price, quantitiy FROM products WHERE sku = INPUT_SKU;
+
+-- Pull products by name / INPUT_NAME holds the value for the inputted name from the user
+SELECT productName FROM products WHERE productName LIKE INPUT_NAME;
